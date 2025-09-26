@@ -1,23 +1,30 @@
-/* ✅ Fonts */
-body {
-  font-family: 'Inter', 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #111;
-}
+/* src/styles/Hero.css */
 
 .hero {
-  display: flex;
+  display: flex; /* This is the key: arranges text and 3D model side-by-side */
   align-items: center;
   justify-content: space-between;
   padding: 80px 120px;
   background: linear-gradient(to right, #fff 70%, #fff5f5 100%);
+  min-height: 600px;
+  overflow: hidden;
 }
 
 .hero-content {
-  max-width: 50%;
+  width: 48%;
+  flex-shrink: 0;
 }
+
+/* This container for the 3D model is critical for it to show up */
+.hero-3d-container {
+  width: 50%;
+  height: 600px; /* ✅ The 3D Canvas MUST have a height to render */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- The rest of your existing text styles --- */
 
 .hero-content h1 {
   font-size: 52px;
@@ -27,7 +34,7 @@ body {
 }
 
 .hero-content h1 .red {
-  color: #e50914; /* Archetype red */
+  color: #e50914;
   font-weight: 700;
 }
 
@@ -86,9 +93,4 @@ body {
 
 .btn-link:hover {
   text-decoration: underline;
-}
-
-.hero-image img {
-  max-width: 420px;
-  height: auto;
 }

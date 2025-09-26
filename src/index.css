@@ -1,0 +1,37 @@
+/* src/index.css */
+/* ✅ Add this line to the VERY TOP of this file */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Inter:wght@400;600&display=swap');
+
+/* The rest of your file... */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* This keeps 'Inter' as the default font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ... etc ... */
+@font-face {
+  font-family: 'Inter';
+  /* ✅ NOTICE THE NEW, SIMPLER PATH */
+  src: url('/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  /* ✅ NOTICE THE NEW, SIMPLER PATH */
+  src: url('/fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: #111;
+}

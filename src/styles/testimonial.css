@@ -1,0 +1,72 @@
+.testimonial-section {
+  background-color: #f8f8f8;
+  padding: 120px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ✅ ADDED: These are required for the background quote */
+  position: relative;
+  overflow: hidden; /* Keeps the giant quote from spilling out */
+}
+
+/* ✅ ADDED: The giant, low-opacity background quote */
+.testimonial-section::before {
+  content: '“';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Lora', serif; /* Use the same special font */
+  font-size: 30rem; /* This makes it huge */
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.04); /* Black color with only 4% opacity */
+  z-index: 1; /* Places it behind the text */
+}
+
+.testimonial-content {
+  max-width: 850px;
+  text-align: left;
+
+  /* ✅ ADDED: These position the text above the background quote */
+  position: relative;
+  z-index: 2;
+}
+
+.quote-text {
+  /* ✅ This uses the special 'Lora' font we imported */
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #222;
+  margin: 0 0 40px 0;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-details {
+  text-align: left;
+}
+
+.author-name {
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+
+.author-company {
+  color: #555;
+  margin: 0;
+}

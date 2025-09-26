@@ -1,0 +1,94 @@
+/* src/styles/hero.css */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 120px;
+  background: linear-gradient(to right, #fff 70%, #fff5f5 100%);
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 48%;
+  flex-shrink: 0;
+}
+
+/* This container for the 3D model is critical */
+.hero-3d-container {
+  width: 50%;
+  height: 600px; /* The 3D Canvas MUST have a height to render */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-content h1 .red {
+  color: #e50914;
+  font-weight: 700;
+}
+
+.hero-content h1 .gray {
+  color: #777;
+  font-weight: 400;
+}
+
+.hero-content h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #222;
+}
+
+.hero-content .tagline {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.hero-content .description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-red {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #e50914;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-red:hover {
+  background: #c40811;
+}
+
+.btn-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}

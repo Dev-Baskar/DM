@@ -1,7 +1,7 @@
-/* src/styles/Hero.css */
+/* src/styles/hero.css */
 
 .hero {
-  display: flex; /* This is the key: arranges text and 3D model side-by-side */
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 80px 120px;
@@ -15,16 +15,14 @@
   flex-shrink: 0;
 }
 
-/* This container for the 3D model is critical for it to show up */
+/* This container for the 3D model is critical */
 .hero-3d-container {
   width: 50%;
-  height: 600px; /* ✅ The 3D Canvas MUST have a height to render */
+  height: 600px; /* The 3D Canvas MUST have a height to render */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* --- The rest of your existing text styles --- */
 
 .hero-content h1 {
   font-size: 52px;

@@ -1,4 +1,11 @@
-/* src/styles/hero.css */
+/* ✅ Fonts */
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
 
 .hero {
   display: flex;
@@ -6,22 +13,10 @@
   justify-content: space-between;
   padding: 80px 120px;
   background: linear-gradient(to right, #fff 70%, #fff5f5 100%);
-  min-height: 600px;
-  overflow: hidden;
 }
 
 .hero-content {
-  width: 48%;
-  flex-shrink: 0;
-}
-
-/* This container for the 3D model is critical */
-.hero-3d-container {
-  width: 50%;
-  height: 600px; /* The 3D Canvas MUST have a height to render */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 50%;
 }
 
 .hero-content h1 {
@@ -32,7 +27,7 @@
 }
 
 .hero-content h1 .red {
-  color: #e50914;
+  color: #e50914; /* Archetype red */
   font-weight: 700;
 }
 
@@ -91,4 +86,9 @@
 
 .btn-link:hover {
   text-decoration: underline;
+}
+
+.hero-image img {
+  max-width: 420px;
+  height: auto;
 }

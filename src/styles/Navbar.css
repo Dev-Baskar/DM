@@ -1,16 +1,17 @@
-/* src/styles/navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 120px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .logo {
   height: 40px;
+  width: auto;
 }
 
 .nav-links {
@@ -20,33 +21,51 @@
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  text-transform: lowercase;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  color: #111;
+  font-weight: 400;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
   color: #e50914;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .btn-contact {
-  padding: 10px 24px;
-  background-color: #111;
+  background: #e50914;
   color: #fff;
-  border-radius: 6px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
+  background: #c40811;
 }
 
 .btn-contact:hover {
-  background-color: #333;
 }
 
 .hamburger {
-  display: none;
-  border: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
   background: none;
+  border: none;
   cursor: pointer;
+}
+
+.hamburger span {
+  width: 20px;
+  height: 2px;
+  background: #111;
+  border-radius: 2px;
 }

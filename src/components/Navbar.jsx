@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/navbar.css"; // ✅ MAKE SURE THIS LINE EXISTS
-import logo from "../assets/logo.png";
+import "../styles/navbar.css";
+import logo from "../assets/logo.png"; // ✅ Add your lotus logo here
 
 function Navbar() {
   return (

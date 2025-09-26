@@ -1,21 +1,22 @@
-// src/components/IphoneModel.jsx
-import React from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
 function Iphone() {
-  const { scene } = useGLTF("/models/iphone.glb"); // path from public folder
-  return <primitive object={scene} scale={2} position={[0, -1.5, 0]} />;
+  const { scene } = useGLTF("/models/iphone.glb");
+  return <primitive object={scene} scale={3} position={[0, -1, 0]} />;
 }
 
 export default function IphoneModel() {
   return (
     <div className="w-full h-[400px] md:h-[500px]">
-      <Canvas camera={{ position: [0, 0, 5], fov: 50 }}>
-        <ambientLight intensity={0.7} />
-        <directionalLight position={[2, 2, 2]} />
+      <Canvas camera={{ position: [0, 1, 7], fov: 45 }}>
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} />
+        <Suspense fallback={null}>
+          <Iphone />
+        </Suspense>
         <OrbitControls enableZoom={false} />
-        <Iphone />
       </Canvas>
     </div>
   );

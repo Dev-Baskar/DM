@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 120px;
+  padding: 5px 120px; /* Reduced top and bottom padding from 80px to 20px */
   background: linear-gradient(to right, #fff 70%, #fff5f5 100%);
-  min-height: 600px;
+  min-height: 550px;
   overflow: hidden;
 }
 
